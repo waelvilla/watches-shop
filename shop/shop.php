@@ -1,13 +1,19 @@
-<?php include 'header.php';?>
+<?php include '../header.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <title>Watches Shop</title>
 </head>
 <body>
-    <div>hello</div>
+<div>
+    <div>
+        
+    </div>
+</div>
+    
+
 </body>
+</html>
 
-
-<?php include 'footer.php'; ?>
+<?php include '../footer.php'; ?>
