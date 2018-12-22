@@ -7,14 +7,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
-		<!--nev bar-->
-		<nav>
-			<ul>
-				<li>foo</li>
-				<li>bar</li>
-			</ul>
-		</nav>
-		<!--end nev bar-->
+		<!-- header -->
+		<?php include 'working/header.php'; ?>
+		<!-- end header -->
+
+
 		<!--slides-->
 		<div id ="slides" class="center">
 			<p>slides go here</p>
@@ -46,15 +43,6 @@
 			</div>
 		</div>
 		<!-- end cards -->
-		<!-- footer -->
-		<footer>
-			<form>
-				<label>Subscribe to our letterbox:
-					<input type="email" name="email" placeholder="Enter Email">
-				</label>
-				<input type="submit" value="Subscribe">
-			</form>
-		</footer>
-		<!-- end footer -->
+		<?php include 'working/footer.php'; ?>
 	</body>
 </html>

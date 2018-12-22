@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <nav>
-        navbar
-    </nav>
+		<!--nenavv bar-->
+		<nav>
+			<ul>
+				<li>foo</li>
+				<li>bar</li>
+			</ul>
+		</nav>
+		<!--end nav bar-->
 </body>
 </html>
