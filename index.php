@@ -1,7 +1,4 @@
-<?php include 'working/db.php';
 
-
-?>		
 	
 <body>
 	<!-- header -->

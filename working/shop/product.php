@@ -1,6 +1,12 @@
+    <?php 
+    include '../header.php';
+    $categories=$db -> query("select * from watches_categories"); 
     
     
-  <?php include '../header.php';?>
+    ?>
+    
+    
+  <?php  ?>
   <!-- Page Content -->
   <div class="container">
 
@@ -9,9 +15,9 @@
       <div class="col-lg-3">
         <h1 class="my-4">Watches Shop</h1>
         <div class="list-group">
-          <a href="#" class="list-group-item active">Category 1</a>
-          <a href="#" class="list-group-item">Category 2</a>
-          <a href="#" class="list-group-item">Category 3</a>
+          <?php while($category = $categories->fetch_assoc()) : ?>
+            <a href="#" class="list-group-item "><?php echo $category['name'] ?></a>
+          <?php endwhile;?>
         </div>
       </div>
       <!-- /.col-lg-3 -->
