@@ -33,23 +33,24 @@ footer{
 }
 
 .card{
-	border: solid;
 	display: inline-block;
 	margin: 50px;
-	padding: 100px;
+	padding: 0px 0px 100px 0px;
+}
+
+.card-group .card .card-header{
+
 }
 
 #cardContainer{
-	background-color: MediumVioletRed;
 }
 
 #slides{
 	vertical-align: middle;
-	background-color: pink;
 	padding-bottom: 500px;
 }
 
 #aboutMe{
-	background-color: red;
+	background-color: white;
 	margin: 0px;
 }
