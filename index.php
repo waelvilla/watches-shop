@@ -1,10 +1,4 @@
-<?php include 'working/db.php';
-$sql= "insert into watches(id,name,category,price) values(1,'w1','c1','123')";
-$val = $db -> query($sql);
 
-
-
-?>		
 	
 <body>
 	<!-- header -->
