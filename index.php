@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 	<head>
@@ -7,26 +6,12 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
-	<body>
-		<!-- header -->
-		<?php include 'working/header.php'; ?>
-		<!-- end header -->
-
-
-		<!--slides-->
-		<div id ="slides" class="center bg-primary">
-			<p>slides go here</p>
-=======
-<?php include 'working/db.php';
-$sql= "insert into watches(id,name,category,price) values(1,'w1','c1','123')";
-$val = $db -> query($sql);
-
-
-
-?>		
-	
+	</head>	
 <body>
+	<?php include 'working/db.php';
+	$sql= "insert into watches(id,name,category,price) values(1,'w1','c1','123')";
+	$val = $db -> query($sql);
+	?>	
 	<!-- header -->
 	<?php include 'working/header.php'; ?>
 	<!-- end header -->
@@ -71,7 +56,5 @@ $val = $db -> query($sql);
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 		<!--end bootstrap scripts-->
-	<!-- end cards -->
-	<?php include 'working/footer.php'; ?>
 	</body>
 </html>
