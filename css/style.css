@@ -1,7 +1,7 @@
+/* css resets */
 *{
 	box-sizing: border-box;
 }
-
 h1{
 	margin: 0px;
 }
@@ -10,15 +10,28 @@ p{
 }
 body{
 	margin: 0;
-	padding-top: 65px;
 }
 
-nav{
-	position: absolute;
+/* navbar */
+.nav{
+	padding-top: 15px;
+	padding-bottom: 10px;
+	text-align: center;
 	width: 100%;
 	background-color: yellow;
-	top:0;
 }
+.nav li{
+	display: inline-block;
+	text-decoration: none;
+	padding: 5px;
+}
+.nav li a{
+	text-decoration: none;
+}
+
+/* end navbar */
+
+
 
 form{
 	text-align: end;

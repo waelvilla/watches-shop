@@ -8,14 +8,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
-		<!--nev bar-->
-		<nav>
-			<ul>
-				<li>foo</li>
-				<li>bar</li>
-			</ul>
-		</nav>
-		<!--end nev bar-->
+		<!-- header -->
+		<?php include 'working/header.php'; ?>
+		<!-- end header -->
+
+
 		<!--slides-->
 		<div id ="slides" class="center bg-primary">
 			<p>slides go here</p>
@@ -48,14 +45,7 @@
 		</div>
 		<!-- end cards -->
 		<!-- footer -->
-		<footer>
-			<form>
-				<label>Subscribe to our letterbox:
-					<input type="email" name="email" placeholder="Enter Email">
-				</label>
-				<input type="submit" value="Subscribe">
-			</form>
-		</footer>
+		<?php include 'working/footer.php'; ?>
 		<!-- end footer -->
 		<!--bootstrap scripts-->
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -1,0 +1,15 @@
+
+.product-image{
+    height: 350px;
+    width: 350px;
+    border: 1px solid black;
+    display: inline-block;
+    
+}
+.product-description{
+    display: inline-block;
+    border: 1px solid black;
+    height: 350px;
+    width: 500px;
+    margin: 20px 0px 0px 30px;    
+}
