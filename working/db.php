@@ -1,9 +1,10 @@
 <?php
 $db=new Mysqli;
-$db->connect('localhost','root','','watches');
 
-// if($db){
-// 	echo 'success';
-// }
+$db->connect('sql141.main-hosting.eu.','u993407166_vypu','U4XnZhwLbeNW','u993407166_vypu');
+
+if($db){
+	echo 'success';
+}
 
 ?>
