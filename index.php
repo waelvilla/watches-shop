@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title></title>
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
 	<body>
 		<!-- header -->
 		<?php include 'working/header.php'; ?>
