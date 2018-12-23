@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 	<head>
@@ -16,22 +17,40 @@
 		<!--slides-->
 		<div id ="slides" class="center bg-primary">
 			<p>slides go here</p>
-		</div>
-		<!--end slides-->
-		<!-- about me -->
-		<div id="aboutMe" class="text center">
-			<h1>about me</h1>
-			<p>
-				ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-		</div>
-		<!-- end about me-->
-		<!-- cards --->
+=======
+<?php include 'working/db.php';
+$sql= "insert into watches(id,name,category,price) values(1,'w1','c1','123')";
+$val = $db -> query($sql);
+
+
+
+?>		
+	
+<body>
+	<!-- header -->
+	<?php include 'working/header.php'; ?>
+	<!-- end header -->
+
+	<!--slides-->
+	<div id ="slides" class="center">
+		<p>slides go here</p>
+	</div>
+	<!--end slides-->
+	<!-- about me -->
+	<div id="aboutMe" class="text center">
+		<h1>about me</h1>
+		<p>
+			ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div>
+	<!-- end about me-->
+	<!-- cards --->
+	<div id="cardContainer" class="center">
 		<div id="cardContainer" class="card-group bg-primary" class="center">
 			<div class="card bg-secondary mb-3">
 				<p class="card-header">card 1</p>
@@ -52,5 +71,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 		<!--end bootstrap scripts-->
+	<!-- end cards -->
+	<?php include 'working/footer.php'; ?>
 	</body>
 </html>
