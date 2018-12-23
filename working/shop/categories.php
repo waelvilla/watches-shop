@@ -20,9 +20,8 @@ $categories=$db -> query("select * from watches_categories");
 
       <div class="card-body">
         <h4 class="card-title"><?php echo $category['name']; ?></h4>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-          card's content.</p>
-        <a href="#" class="btn btn-primary">Button</a>
+        <p class="card-text">Browse our selection of super fancy watches for all sorts of occasions. These watches are very flexibile, durable, water resistant, you name it.</p>
+        <a href="#" class="btn btn-primary">View</a>
       </div>
 
     </div>
