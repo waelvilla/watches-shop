@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -7,7 +8,7 @@
 		<link rel="stylesheet" href="css/style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>	
-<body>
+	<body>
 	<?php include 'working/db.php';
 	$sql= "insert into watches(id,name,category,price) values(1,'w1','c1','123')";
 	$val = $db -> query($sql);

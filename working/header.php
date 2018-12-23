@@ -1,3 +1,6 @@
+<?php 
+include 'db.php';
+?>
 <html>
 <head>
     <!-- Font Awesome -->
@@ -8,6 +11,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.0/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shop.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watches</title>
 </head>
@@ -21,16 +25,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/watches-shop/index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Categories</a>
+                    <a class="nav-link" href="/watches-shop/working/shop/categories.php">Categories</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Shop</a>
+                    <a class="nav-link" href="/watches-shop/working/shop/shop.php">Shop</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Cart</a>
