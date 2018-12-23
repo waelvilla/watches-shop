@@ -55,12 +55,16 @@ footer{
 
 }
 
+.Slides{
+	width: 50%;
+	height: auto;
+}
+
 #cardContainer{
 }
 
 #slides{
 	vertical-align: middle;
-	padding-bottom: 500px;
 }
 
 #aboutMe{
