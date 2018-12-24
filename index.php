@@ -9,10 +9,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>	
 	<body>
-	<?php include 'working/db.php';
-	$sql= "insert into watches(id,name,category,price) values(1,'w1','c1','123')";
-	$val = $db -> query($sql);
-	?>	
+	<?php include 'working/db.php';?>	
 	<!-- header -->
 	<?php include 'working/header.php'; ?>
 	<!-- end header -->

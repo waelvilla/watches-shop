@@ -17,7 +17,7 @@ include 'db.php';
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark blue-gradient justify-content-center">
-        <a class="navbar-brand" href="#">Watches </a>
+        <a class="navbar-brand" href="/watches-shop/index.php">Watches </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
             aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

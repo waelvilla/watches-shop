@@ -1,7 +1,7 @@
     <?php 
     include '../header.php';
     $categories=$db -> query("select * from watches_categories"); 
-    
+      
     
     ?>
     
@@ -12,23 +12,22 @@
 
     <div class="row">
 
-      <div class="col-lg-3">
-        <h1 class="my-4">Watches Shop</h1>
-        <div class="list-group">
-          <?php while($category = $categories->fetch_assoc()) : ?>
-            <a href="#" class="list-group-item "><?php echo $category['name'] ?></a>
-          <?php endwhile;?>
-        </div>
-      </div>
-      <!-- /.col-lg-3 -->
-
       <div class="col-lg-9">
-
         <div class="card mt-4">
           <img class="card-img-top img-fluid" src="../../img/p1.jpg" alt="">
           <div class="card-body">
             <h3 class="card-title">Watch One</h3>
             <h4>$239.99</h4>
+            <form class="buy-now" method="post">
+              <label for="quantity">Quantity:</label>
+              <select name="quantity" id="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+              <button type="submit" class="btn btn-success">Add To Cart</button>
+            </form>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta fugit fugiat hic aliquam itaque facere, soluta. Totam id dolores, sint aperiam sequi pariatur praesentium animi perspiciatis molestias iure, ducimus!</p>
             <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
             4.0 stars
