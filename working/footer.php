@@ -16,14 +16,14 @@
       <!-- /.container -->
     </footer>
 <!-- JQuery -->
-<script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="/watches-shop/assets/js/jquery.min.js"></script>
 <!-- Bootstrap tooltips -->
-<script type="text/javascript" src="./assets/js/popper.min.js"></script>
+<script type="text/javascript" src="/watches-shop/assets/js/popper.min.js"></script>
 <!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/watches-shop/assets/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
-<script type="text/javascript" src="./assets/js/mdb.min.js"></script>
-<script src="../js/script.js"></script>
+<script type="text/javascript" src="/watches-shop/assets/js/mdb.min.js"></script>
+<script src="/watches-shop/js/script.js"></script>
 
 </body>
 </html>

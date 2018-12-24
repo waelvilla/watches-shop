@@ -9,9 +9,9 @@ include 'db.php';
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.0/css/mdb.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="/watches-shop/css/normalize.css">
+    <link rel="stylesheet" href="/watches-shop/css/style.css">
+    <link rel="stylesheet" href="/watches-shop/css/shop.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watches</title>
 </head>
