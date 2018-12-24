@@ -9,11 +9,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>	
 	<body>
-	<?php include 'working/db.php';?>	
 	<!-- header -->
 	<?php include 'working/header.php'; ?>
 	<!-- end header -->
-
 	<!--slides-->
 	<div id ="slides" class="center">
 		<img class="Slides" src="./img/p1.jpg">
