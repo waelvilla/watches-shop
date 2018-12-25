@@ -1,7 +1,15 @@
 <?php include '../header.php';
-
+  if (isset($_GET['id'])){ 
+  $category_id = $_GET['id'];
+  $categories= $db -> query("select * from watches_categories where id = '$category_id'");
+  $category = $categories->fetch_assoc();
+  $products=$db -> query("select * from watches where category_id = '$category_id'");
+  $categories= $db -> query("select * from watches_categories");
+ } else {
   $products=$db -> query("select * from watches");
   $categories= $db -> query("select * from watches_categories");
+
+ }
 
 
 ?>
@@ -12,12 +20,15 @@
       <div class="row">
   
         <div class="col-lg-3">
-
-          <h1 class="my-4">Watches Shop</h1>
+           <?php if (isset($_GET['id'])){ ?>
+              <h1 class='my-4'> <?php echo "$category[name]" ?></h1>
+             <?php } else { ?>
+              <h1 class="my-4">Watches Shop</h1> 
+             <?php } ?>
           <div class="list-group">
-            <a href="#" class="list-group-product">Category 1</a>
-            <a href="#" class="list-group-product">Category 2</a>
-            <a href="#" class="list-group-product">Category 3</a>
+            <?php while($category = $categories -> fetch_assoc()): ?>
+            <a href="shop.php?id=<?php echo $category[id];?>" class="list-group-product"><?php echo "$category[name]" ?></a>
+            <?php endwhile; ?>
           </div>
 
         </div>
