@@ -68,6 +68,7 @@ footer{
 }
 
 #aboutMe{
-	background-color: white;
+	background-color: #4285f4!important;
+	color: white;
 	margin: 0px;
 }
