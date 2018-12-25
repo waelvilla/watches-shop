@@ -1,7 +1,7 @@
     <?php 
     include '../header.php';
 
-     $id=$_GET['id']; 
+    $id=$_GET['id']; 
     $rows=$db -> query("select * from watches where id ='$id'");
     $product= $rows -> fetch_assoc();
     $category_id=$product['category_id'];
