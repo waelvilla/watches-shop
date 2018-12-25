@@ -35,7 +35,7 @@ for($i=0; $i<count($db_cart); $i++){
                     <tbody>
                         <?php foreach ($cart as $item ){?>
                         <tr>
-                            <td><img src="/watches-shop/img/p<?php echo $item['id']?>.jpg" class="img-thumbnail"/> </td>
+                            <td><img src="/watches-shop/img/p<?php echo $item['id']?>.jpg" class="img-thumbnail cart-img"/> </td>
                             <td><?php echo $item['name'] ?></td>
                             <td>In stock</td>
                             <td><input class="form-control" type="text" value="1" /></td>
@@ -87,9 +87,7 @@ for($i=0; $i<count($db_cart); $i++){
 
 
 
-
-<!-- body -->
-
+<h1 class="hellothere">hello</h1>
 
 
   <?php include '../footer.php';?>
