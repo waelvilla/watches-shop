@@ -7,5 +7,5 @@ $db->connect('sql141.main-hosting.eu.','u993407166_vypu','U4XnZhwLbeNW','u993407
 // if($db){
 // 	echo 'success';
 // }
-
+session_start();
 ?>

@@ -7,8 +7,25 @@
     $category_id=$product['category_id'];
     $categories=$db -> query("select * from watches_categories where id='$category_id'");
     $category=$categories-> fetch_assoc();
-    
-    ?>
+    $price=$product['price'];
+
+
+    if(isset($_POST['add_to_cart'])){
+      $price = htmlspecialchars($price);
+      $quantity=htmlspecialchars($_POST['quantity']);
+      if(empty($_SESSION['cart'])){
+        $_SESSION['cart']=array($id=>$id);
+      }
+      else{
+        array_push($_SESSION['cart'], $id);
+      }
+      if($price){
+        header('location: cart.php?');
+        die();
+      }
+    }
+
+  ?>
     
     
   <?php  ?>
@@ -32,7 +49,7 @@
                 <option value="3">3</option>
                 <option value="4">4</option>
               </select>
-              <button type="submit" class="btn btn-success">Add To Cart</button>
+              <button type="submit" class="btn btn-success" name="add_to_cart">Add To Cart</button>
             </form>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta fugit fugiat hic aliquam itaque facere, soluta. Totam id dolores, sint aperiam sequi pariatur praesentium animi perspiciatis molestias iure, ducimus!</p>
             <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
@@ -66,6 +83,6 @@
     </div>
 
   </div>
-
+  <h1 class="hellothere">hello</h1>
 
   <?php include '../footer.php';?>

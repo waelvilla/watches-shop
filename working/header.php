@@ -1,5 +1,7 @@
 <?php 
 include 'db.php';
+// session_start();
+
 ?>
 <html>
 <head>
