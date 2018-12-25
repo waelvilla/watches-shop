@@ -1,6 +1,8 @@
-
 	<!-- header -->
-	<?php include 'working/header.php'; ?>
+	<?php
+	include 'working/header.php';
+	$categories=$db -> query("select * from watches_categories");
+	?>
 	<!-- end header -->
 	<!--slides-->
 	<div id ="slides" class="center">
@@ -25,18 +27,18 @@
 	</div>
 	<!-- end about me-->
 	<!-- cards --->
-	<div id="cardContainer" class="center">
-		<div id="cardContainer" class="card-group bg-primary" class="center">
-			<div class="home-card bg-secondary mb-3">
-				<p class="card-header">card 1</p>
-				</div>
-			<div class="home-card bg-secondary mb-3">
-				<p class="card-header">card 2</p>
-			</div>
-			<div class="home-card bg-secondary mb-3">
-				<p class="card-header">card 3</p>
-			</div>
-		</div>
+	<div id="cardContainer" class="center card-deck">
+		<?php while ($category = $categories -> fetch_assoc()): ?>
+		  <div class="card">
+		    <img class="card-img-top" src="./img/p<?php echo $category['id'];?>.jpg" >
+		    <div class="card-body">
+		     	<h5 class="card-title"><?php echo $category['name']; ?></h4>
+		        <p class="card-text">Browse our selection of super fancy watches for all sorts of occasions. These watches are very flexibile, durable, water resistant, you name it.</p>
+		        <a href="shop.php?id=<?php echo $category['id']; ?>" class="btn btn-primary">View</a>
+		    </div>
+		  </div>
+  		<?php endwhile; ?>
+	</div>
 		<!-- end cards -->
 		<!-- footer -->
 		<?php include 'working/footer.php'; ?>
