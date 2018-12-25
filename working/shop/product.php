@@ -1,7 +1,12 @@
     <?php 
     include '../header.php';
-    $categories=$db -> query("select * from watches_categories"); 
-      
+
+     $id=$_GET['id']; 
+    $rows=$db -> query("select * from watches where id ='$id'");
+    $product= $rows -> fetch_assoc();
+    $category_id=$product['category_id'];
+    $categories=$db -> query("select * from watches_categories where id='$category_id'");
+    $category=$categories-> fetch_assoc();
     
     ?>
     
@@ -14,10 +19,11 @@
 
       <div class="col-lg-9">
         <div class="card mt-4">
-          <img class="card-img-top img-fluid" src="../../img/p1.jpg" alt="">
+          <img class="card-img-top img-fluid" src="../../img/p<?php echo $product['id'];?>.jpg" alt="">
           <div class="card-body">
-            <h3 class="card-title">Watch One</h3>
-            <h4>$239.99</h4>
+            <h3 class="card-title"><?php echo $product['name']; ?></h3>
+            <h5>$<?php echo $product['price'];?></h4>
+            <h6>Category: <?php echo $category['name'];?></h6>
             <form class="buy-now" method="post">
               <label for="quantity">Quantity:</label>
               <select name="quantity" id="quantity">

@@ -27,13 +27,13 @@
 	<!-- cards --->
 	<div id="cardContainer" class="center">
 		<div id="cardContainer" class="card-group bg-primary" class="center">
-			<div class="card bg-secondary mb-3">
+			<div class="home-card bg-secondary mb-3">
 				<p class="card-header">card 1</p>
 				</div>
-			<div class="card bg-secondary mb-3">
+			<div class="home-card bg-secondary mb-3">
 				<p class="card-header">card 2</p>
 			</div>
-			<div class="card bg-secondary mb-3">
+			<div class="home-card bg-secondary mb-3">
 				<p class="card-header">card 3</p>
 			</div>
 		</div>

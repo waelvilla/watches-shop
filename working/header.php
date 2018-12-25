@@ -37,7 +37,7 @@ include 'db.php';
                     <a class="nav-link" href="/watches-shop/working/shop/shop.php">Shop</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Cart</a>
+                    <a class="nav-link" href="/watches-shop/working/shop/cart.php">Cart</a>
                 </li>
             </ul>
         </div>
