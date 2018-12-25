@@ -1,6 +1,26 @@
 <?php 
 include 'db.php';
-// session_start();
+
+$hidden="d-none";
+$login_hidden="";
+$username="";
+$admin="d-none";
+
+if(isset($_SESSION['valid'])) {
+    // header('Location: /watches-shop/working/login.php');
+    $hidden="";
+    $login_hidden="d-none";
+    $username=$_SESSION['valid'];
+    
+    if(($_SESSION['category']=="admin")){
+        $admin="";
+    }
+}
+if(isset($_GET['logout'])){
+    session_destroy();
+    header('Location: /watches-shop/index.php');    
+}
+
 
 ?>
 <html>
@@ -41,6 +61,22 @@ include 'db.php';
                 <li class="nav-item">
                     <a class="nav-link" href="/watches-shop/working/shop/cart.php">Cart</a>
                 </li>
+
             </ul>
+            <span class="nav-item  ml-auto">
+                <div class="nav-item dropdown <?php echo $hidden;?>">
+                    <a class="nav-link dropdown-toggle white-text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Logged in as <?php echo $username;?>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Cart</a>
+                    <a class="dropdown-item <?php echo $hidden;?>" href="?logout=1">Log Out</a>
+                    <div class="dropdown-divider <?php echo $admin?>"></div>
+                    <a class="dropdown-item <?php echo $admin?>" href="/watches-shop/working/admin/">Admin Dashboard</a>
+                    </div>
+                </div>
+                <a href="/watches-shop/working/login.php" class="nav-link white-text <?php echo $login_hidden;?>">Login | Signup</a>
+
+            </span>
         </div>
     </nav>

@@ -5,12 +5,7 @@ if(isset($_SESSION['cart'])){
     $hidden="";
     $db_cart=$_SESSION['cart'];
     $cart=array();
-// for($i=0; $i<count($db_cart); $i++){
-//     $id=$db_cart[$i];
-//     $products=$db -> query("select * from watches where id='$id'");
-//     $product= $products -> fetch_assoc();
-//     array_push($cart,$product);
-// }
+
     foreach ($db_cart as $product){
         $products=$db -> query("select * from watches where id='$product'");
         $temp_product=$products -> fetch_assoc();
@@ -25,6 +20,11 @@ if(isset($_SESSION['cart'])){
         }
         $total=$total+($product['price']*$quantity);
     }
+    print_r ($cart);
+    echo "<script> 
+    // let p='print_r ($cart)';
+    // console.log(typeof p);
+    </script>";
 }
 
 
@@ -57,9 +57,9 @@ if(isset($_SESSION['cart'])){
                         <tr>
                             <td><img src="/watches-shop/img/p<?php echo $item['id']?>.jpg" class="w-25"/> </td>
                             <td><a href="product.php?id=<?php echo $item['id']?>'"><?php echo $item['name'] ?></a></td>
-                            <td>In stock</td>
-                            <td><input class="form-control" type="text" name="quantity" value="1" /></td>
-                            <td class="text-right">$<?php echo $item['price']?></td>
+                            <td class="in_stock">In stock</td>
+                            <td><input class="form-control" class="quantity" type="text" name="quantity" id="quantity<?php echo $item['id'];?>" value="1" /></td>
+                            <td class="text-right" class="price">$<?php echo $item['price']?></td>
                             <td class="text-right"><button class="btn btn-sm btn-danger"  onclick="window.location.href='delete_cart.php?id=<?php echo $item['id'];?>'"><i class="fa fa-trash"></i> </button> </td>
                         </tr>
                         <?php } ?>
@@ -111,3 +111,5 @@ if(isset($_SESSION['cart'])){
 </div>
 
   <?php include '../footer.php';?>
+
+<script src="../../js/cart.js"></script>
