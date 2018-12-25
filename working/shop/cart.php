@@ -1,7 +1,8 @@
 <?php
 include '../header.php';
-
-
+$cart=$_SESSION['cart'];
+$products=$db -> query("select * from watches");
+print_r($products);
 ?>
 
 <section class="jumbotron text-center">

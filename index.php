@@ -1,6 +1,6 @@
-
 	<!-- header -->
-	<?php include 'working/header.php'; ?>
+	<?php 
+	include 'working/header.php'; ?>
 	<!-- end header -->
 	<!--slides-->
 	<div id ="slides" class="center">
