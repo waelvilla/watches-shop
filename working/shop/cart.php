@@ -1,6 +1,13 @@
 <?php
 include '../header.php';
-
+$db_cart=$_SESSION['cart'];
+$cart=array();
+for($i=0; $i<count($db_cart); $i++){
+    $id=$db_cart[$i];
+    $products=$db -> query("select * from watches where id='$id'");
+    $product= $products -> fetch_assoc();
+    array_push($cart,$product);
+}
 
 ?>
 
@@ -26,14 +33,16 @@ include '../header.php';
                         </tr>
                     </thead>
                     <tbody>
+                        <?php foreach ($cart as $item ){?>
                         <tr>
-                            <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
-                            <td>Product Name Titi</td>
+                            <td><img src="/watches-shop/img/p<?php echo $item['id']?>.jpg" class="img-thumbnail cart-img"/> </td>
+                            <td><?php echo $item['name'] ?></td>
                             <td>In stock</td>
                             <td><input class="form-control" type="text" value="1" /></td>
                             <td class="text-right">70,00 €</td>
                             <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
                         </tr>
+                        <?php } ?>
                         <tr>
                             <td></td>
                             <td></td>
@@ -78,9 +87,7 @@ include '../header.php';
 
 
 
-
-<!-- body -->
-
+<h1 class="hellothere">hello</h1>
 
 
   <?php include '../footer.php';?>
