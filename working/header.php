@@ -30,7 +30,7 @@ include 'db.php';
                     <a class="nav-link" href="/watches-shop/index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="/watches-shop/index.php#aboutUs">About Us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/watches-shop/working/shop/categories.php">Categories</a>

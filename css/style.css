@@ -64,7 +64,8 @@ footer{
 	vertical-align: middle;
 }
 
-#aboutMe{
-	background-color: white;
+#aboutUs{
+	background-color: #4285f4!important;
+	color: white;
 	margin: 0px;
 }
