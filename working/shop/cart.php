@@ -35,11 +35,11 @@ for($i=0; $i<count($db_cart); $i++){
                     <tbody>
                         <?php foreach ($cart as $item ){?>
                         <tr>
-                            <td><img src="/watches-shop/img/p<?php echo $item['id']?>.jpg" class="img-thumbnail cart-img"/> </td>
-                            <td><?php echo $item['name'] ?></td>
+                            <td><img src="/watches-shop/img/p<?php echo $item['id']?>.jpg" class="w-25"/> </td>
+                            <td><a href="product.php?id=<?php echo $item['id']?>'"><?php echo $item['name'] ?></a></td>
                             <td>In stock</td>
                             <td><input class="form-control" type="text" value="1" /></td>
-                            <td class="text-right">70,00 €</td>
+                            <td class="text-right">$<?php echo $item['price']?></td>
                             <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
                         </tr>
                         <?php } ?>
@@ -83,11 +83,5 @@ for($i=0; $i<count($db_cart); $i++){
         </div>
     </div>
 </div>
-
-
-
-
-<h1 class="hellothere">hello</h1>
-
 
   <?php include '../footer.php';?>
