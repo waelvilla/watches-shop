@@ -14,7 +14,7 @@
 	</div>
 	<!--end slides-->
 	<!-- about me -->
-	<div id="aboutMe" class="text center pb-5">
+	<div id="aboutUs" class="text center pb-5">
 		<h1>about us</h1>
 		<p>
 			ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
