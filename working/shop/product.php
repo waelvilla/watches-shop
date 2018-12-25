@@ -14,7 +14,7 @@
       $price = htmlspecialchars($price);
       $quantity=htmlspecialchars($_POST['quantity']);
       if(empty($_SESSION['cart'])){
-        $_SESSION['cart']=array($id);
+        $_SESSION['cart']=array($id=>$id);
       }
       else{
         array_push($_SESSION['cart'], $id);
